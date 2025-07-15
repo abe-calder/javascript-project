@@ -86,4 +86,77 @@ console.log('Working')
 
 
 
-//
+// Return a Boolean if a number is divisible by 10
+// function divisibleByTen(number) {
+//   if (number % 10 === 0) {
+//     console.log(true)
+//   } else {
+//     console.log(false)
+//   }
+// }
+// divisibleByTen(20)
+
+
+
+
+
+// Return the number of vowels in a string
+// let sentance = "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below."
+// let vowels = ['a', 'e', 'i', 'o', 'u']
+
+
+// function countVowels() {
+//   sentance = sentance.toLowerCase()
+//   console.log(Array.from(sentance).filter(char => vowels.includes(char)))
+// }
+// countVowels()
+
+
+
+
+
+// 1. Create a function that finds the maximum number in an array
+// arr = [32, 99, 12, 4, 6, 97, 43, 2, 9, 74, 17, 11]
+
+// function getLargestNumber(val) {
+//   console.log(Math.max(...val))
+// }
+// getLargestNumber(arr)
+
+
+
+
+
+
+// Check if a string is a palindrome (spelt the same backwards as it is forwards)
+// string1 = "hello"
+// string2 = "level"
+// string3 = "play"
+// string4 = "kayak"
+
+// function palindromeCheck(str) {
+//   let stringLetters = str.split('')
+
+//   let reversedLetters = stringLetters.reverse()
+
+//   let reversedWord = reversedLetters.join('')
+
+//   if (str.toLowerCase() == reversedWord.toLowerCase()) {
+//     console.log(true)
+//   } else {
+//     console.log(false)
+//   }
+// }
+// palindromeCheck(string2)
+
+
+
+
+
+
+
+
+let words = ["spray", "Elite", "exuberant", "destruction", "present"]
+
+let result = words.filter((word) => word.includes(""))
+console.log(result)
