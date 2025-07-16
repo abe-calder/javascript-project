@@ -72,18 +72,33 @@ function printToMiles() {
 
 
 
-// // Calculate the sum of numbers within an array
-// // Example array
-// let arr = [10, -6, 7, 9, 3, 4.2, -9.1]
+// Calculate the sum of numbers within an array
+// Example array
 
-// function sumOf() {
-//   let sum = 0
-//   for (i = 0; i < arr.length; i++) {
-//     sum += arr[i]
-//   }
-//   console.log(sum)
-// }
-// sumOf()
+
+function sumOf(arr) {
+  let sum = 0
+  for (i = 0; i < arr.length; i++) {
+    sum += arr[i]
+  }
+  console.log(sum)
+}
+
+
+
+function printSumOf() {
+  let sumOfInput = document.getElementById('sum-of-input')
+
+  let sumOfOutput = document.getElementById('sum-of-output')
+
+  let sumOfResults = sumOf(sumOfInput.value)
+
+  sumOfOutput.innerHTML = sumOfResults
+}
+
+
+
+
 
 // // Create a function that reverses an arrary
 // let arr = [9, 17, 6, 3, 6]

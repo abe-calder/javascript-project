@@ -62,3 +62,12 @@ textarea {
   margin-left: 30%;
   margin-top: 1%;
 }
+
+#sum-of {
+  background-color: crimson;
+  margin: auto;
+  width: 50%;
+  border: 5px solid;
+  padding: 10px;
+  height: 175px;
+}
