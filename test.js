@@ -121,12 +121,19 @@ console.log('Working')
 
 
 // Function to filter for words that contain a specific character
-// let words = ['spray', 'Elite', 'exuberant', 'destruction', 'present']
+let words = [' spray', ' elite', ' exuberant', ' destruction', ' present']
 
-// function filterSpecificCharacter(char) {
-//   let result = words.filter((word) => word.includes(char))
-// console.log(result)
-// }
-// filterSpecificCharacter('a')
+function showWordsList() {
+  let pWords = document.getElementById('words-list')
+  pWords.innerHTML = words
+}
 
+function filterSpecificCharacter(char) {
+  let outcome = words.filter((word) => word.includes(char))
 
+  let displayResult = document.getElementById('result')
+
+  console.log(outcome)
+
+}
+filterSpecificCharacter('a')
