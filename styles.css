@@ -1,0 +1,64 @@
+body {
+  background-color: black;
+}
+
+#filter-words {
+  background-color: gold;
+  border-radius: 6px;
+  height: 300px;
+  border: 5px solid;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+h1 {
+  font-weight: 900;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+}
+
+.large-centered-row {
+  width: 5%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+}
+
+.controls {
+  border: none;
+  padding-left: 0.5em;
+  background-color: azure;
+}
+
+.button {
+  border: 1px solid;
+  margin: auto;
+  width: 50%;
+}
+
+.within {
+  justify-content: center;
+  margin-left: 30%;
+}
+
+#convert-to-miles {
+  background-color: darkmagenta;
+  margin: auto;
+  width: 50%;
+  border: 5px solid;
+  padding: 10px;
+  height: 175px;
+}
+
+textarea {
+  resize: none;
+}
+
+.convert-button,
+#convert-result {
+  margin: auto;
+  margin-left: 30%;
+  margin-top: 1%;
+}

@@ -1,17 +1,76 @@
-console.log('Working')
+
+
+
+
+let words = [' spray', ' elite', ' exuberant', ' destruction', ' present', ' icecream', ' reservoir', ' formation', ' teenager', ' strike']
+
+
+// Function to show the list of words
+function showWordsList() {
+  let pWords = document.getElementById('words-list')
+  pWords.innerHTML = words
+}
+
+
+// Function to filter for words that contain a specific character
+function filterSpecificCharacter(char) {
+  let outcome = words.filter((word) => word.includes(char))
+
+  return outcome
+}
+
+
+
+function printResult() {
+  let displayResult = document.getElementById('filter-result')
+
+  let userInput = document.getElementById('filter-input')
+
+  let filteredCharResult = filterSpecificCharacter(userInput.value)
+
+  console.log(filteredCharResult)
+
+  displayResult.innerHTML = filteredCharResult
+}
+
+
+
+
+
+
+
+
+
+
 
 // Function to conver kilometers to miles
 // Takes km as input, and returns miles
 
-// let val = 5
-// function convertToMiles() {
-//   if (val === 0) {
-//     console.log("Input any number above 0")
-//   } else {
-//     console.log(val + " Kilometers is Equal to " + val * 0.621371 + " Miles")
-//   }
-// }
-// convertToMiles()
+
+function convertToMiles(val) {
+  if (val === 0) {
+   return "Please enter a number above"
+  } else {
+    return val + " Kilometers is Equal to " + val * 0.621371 + " Miles"
+  }
+}
+convertToMiles()
+
+
+function printToMiles() {
+  let convertResults = document.getElementById('convert-result')
+
+  let convertInput = document.getElementById('convert-input')
+
+  let convertedDistanceResults = convertToMiles(convertInput.value)
+
+  convertResults.innerHTML = convertedDistanceResults
+}
+
+
+
+
+
 
 // // Calculate the sum of numbers within an array
 // // Example array
@@ -120,20 +179,3 @@ console.log('Working')
 
 
 
-// Function to filter for words that contain a specific character
-let words = [' spray', ' elite', ' exuberant', ' destruction', ' present']
-
-function showWordsList() {
-  let pWords = document.getElementById('words-list')
-  pWords.innerHTML = words
-}
-
-function filterSpecificCharacter(char) {
-  let outcome = words.filter((word) => word.includes(char))
-
-  let displayResult = document.getElementById('result')
-
-  console.log(outcome)
-
-}
-filterSpecificCharacter('a')
