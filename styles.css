@@ -97,3 +97,12 @@ p {
   padding: 10px;
   height: 175px;
 }
+
+#vowel-counter {
+  background-color: peru;
+  margin: auto;
+  width: 50%;
+  border: 5px solid;
+  padding: 10px;
+  height: 175px;
+}

@@ -28,8 +28,6 @@ function printResult() {
 
   let filteredCharResult = filterSpecificCharacter(userInput.value)
 
-  console.log(filteredCharResult)
-
   displayResult.innerHTML = filteredCharResult
 }
 
@@ -113,7 +111,6 @@ function printDivisible() {
   let divTextAreaContent = div
 
   let finalCalc = divisibleByTen(numTextAreaContent, divTextAreaContent)
-  console.log(finalCalc)
 
   divisorOutput.innerHTML = finalCalc
 }
@@ -154,12 +151,34 @@ function palindromeCheck(str) {
   let reversedWord = reversedLetters.join('')
 
   if (str.toLowerCase() == reversedWord.toLowerCase()) {
-    console.log(true)
     return true
   } else {
-    console.log(false)
     return false
   }
+}
+
+
+
+// Return the number of vowels in a string
+let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+function printVowels() {
+  let stringIn = document.getElementById('vowel-input').value
+  let vowelsOutput = document.getElementById('vowel-output')
+
+  let vowelsContent = stringIn
+  let vowelCheck = countVowels(vowelsContent)
+
+  vowelsOutput.innerHTML = vowelCheck
+}
+
+function countVowels(sent) {
+  sent = sent.toLowerCase()
+  let result = (Array.from(sent).filter(char => vowels.includes(char)))
+  let resultNum = result.length
+
+  let resultStr = String(resultNum)
+  return resultStr
 }
 
 
