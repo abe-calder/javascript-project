@@ -75,3 +75,16 @@ textarea {
 p {
   font-weight: 600;
 }
+
+#divisible-by {
+  background-color: darkolivegreen;
+  margin: auto;
+  width: 50%;
+  border: 5px solid;
+  padding: 10px;
+  height: 175px;
+}
+
+#divisible-by textarea {
+  width: 150px;
+}

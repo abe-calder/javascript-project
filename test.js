@@ -101,6 +101,35 @@ function sumOf(arr) {
 }
 
 
+
+
+function printDivisible() {
+  let num = document.getElementById('dividend').value
+  let div = document.getElementById('divisor').value
+  let divisorOutput = document.getElementById('divisor-output')
+
+  let numTextAreaContent = num
+
+  let divTextAreaContent = div
+
+  let finalCalc = divisibleByTen(numTextAreaContent, divTextAreaContent)
+  console.log(finalCalc)
+
+  divisorOutput.innerHTML = finalCalc
+}
+
+// Return a Boolean if a number is divisible by 10
+function divisibleByTen(number, divisor) {
+  if (number % divisor === 0) {
+    return true
+  } else {
+    return false
+  }
+}
+
+
+
+
 // // Create a function that reverses an arrary
 // let arr = [9, 17, 6, 3, 6]
 
@@ -140,16 +169,6 @@ function sumOf(arr) {
 // let text = "IT is A LOnG EStABLiSHed facT THAt A rEadEr WIlL bE diStRaCTeD By ThE REAdABlE CONTENt Of a pAge WheN LOokING aT ITS LayOUt. ThE PoiNT OF UsinG lOREM ipsUM iS ThAt iT HAS A MoRE-oR-LESS normAl DisTRIbUTiON of lEttERs, aS OppOsEd tO USIng 'COnTEnT Here, conTENT HEre', MaKinG It lOok LiKE REaDaBLe engLIsH. maNY dESktop pubLIshiNg pAckAgEs and WEb paGe edITORs Now uSE loREM iPsUM aS theIr defAUlT MOdel text, And a SEarCh FoR 'LoREm iPSUm' will uNCoVer ManY WeB siTES STIlL In THEir Infancy. vaRIouS VERSionS hAVE evolVED over tHe yEaRS, sOMEtIMes BY ACCideNT, sOmeTimeS oN PURPoSE ( InjEcTed HumOuR And The liKe )."
 // let noSpace = text.replace(/\s/g, '')
 // console.log(noSpace)
-
-// Return a Boolean if a number is divisible by 10
-// function divisibleByTen(number) {
-//   if (number % 10 === 0) {
-//     console.log(true)
-//   } else {
-//     console.log(false)
-//   }
-// }
-// divisibleByTen(20)
 
 // Return the number of vowels in a string
 // let sentance = "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below."
