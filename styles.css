@@ -88,3 +88,12 @@ p {
 #divisible-by textarea {
   width: 150px;
 }
+
+#palindrome-check {
+  background-color: darkslateblue;
+  margin: auto;
+  width: 50%;
+  border: 5px solid;
+  padding: 10px;
+  height: 175px;
+}

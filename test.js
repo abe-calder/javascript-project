@@ -130,6 +130,40 @@ function divisibleByTen(number, divisor) {
 
 
 
+
+// Check if a string is a palindrome (spelt the same backwards as it is forwards)
+string1 = "hello"
+
+
+function printPalindrome() {
+  let palindromeInputTextArea = document.getElementById('palindrome-input').value
+  let palindromeOutput = document.getElementById('palindrome-output')
+
+  let palindromeCheckContent = palindromeInputTextArea
+
+  let checkPalindromeDone = palindromeCheck(palindromeCheckContent)
+
+  palindromeOutput.innerHTML = checkPalindromeDone
+}
+
+function palindromeCheck(str) {
+  let stringLetters = str.split('')
+
+  let reversedLetters = stringLetters.reverse()
+
+  let reversedWord = reversedLetters.join('')
+
+  if (str.toLowerCase() == reversedWord.toLowerCase()) {
+    console.log(true)
+    return true
+  } else {
+    console.log(false)
+    return false
+  }
+}
+
+
+
 // // Create a function that reverses an arrary
 // let arr = [9, 17, 6, 3, 6]
 
@@ -188,26 +222,7 @@ function divisibleByTen(number, divisor) {
 // }
 // getLargestNumber(arr)
 
-// Check if a string is a palindrome (spelt the same backwards as it is forwards)
-// string1 = "hello"
-// string2 = "level"
-// string3 = "play"
-// string4 = "kayak"
 
-// function palindromeCheck(str) {
-//   let stringLetters = str.split('')
-
-//   let reversedLetters = stringLetters.reverse()
-
-//   let reversedWord = reversedLetters.join('')
-
-//   if (str.toLowerCase() == reversedWord.toLowerCase()) {
-//     console.log(true)
-//   } else {
-//     console.log(false)
-//   }
-// }
-// palindromeCheck(string2)
 
 
 
