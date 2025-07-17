@@ -76,28 +76,29 @@ function printToMiles() {
 // Example array
 
 
+function printSumOf() {
+  let sumOfOutput = document.getElementById('sum-of-output');
+  let textAreaContent = document.getElementById('sum-of-input').value;
+
+
+  let theTextAreaArray = textAreaContent
+    .split(/[\s,]+/) // Split by one or more whitespace characters (includes newlines, spaces, tabs)
+    .filter(Boolean) // Remove any empty strings that might result from extra spaces/newlines
+    .map(Number)    // Convert to number
+    .filter(num => !isNaN(num)) // Remove any NaN values (non-numeric entries)
+
+  let totalSum = sumOf(theTextAreaArray);
+
+  sumOfOutput.innerHTML = `The sum is: ${totalSum}`
+}
+
 function sumOf(arr) {
   let sum = 0
-  for (i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     sum += arr[i]
   }
-  console.log(sum)
+  return sum
 }
-
-
-
-function printSumOf() {
-  let sumOfInput = document.getElementById('sum-of-input')
-
-  let sumOfOutput = document.getElementById('sum-of-output')
-
-  let sumOfResults = sumOf(sumOfInput.value)
-
-  sumOfOutput.innerHTML = sumOfResults
-}
-
-
-
 
 
 // // Create a function that reverses an arrary

@@ -71,3 +71,7 @@ textarea {
   padding: 10px;
   height: 175px;
 }
+
+p {
+  font-weight: 600;
+}
