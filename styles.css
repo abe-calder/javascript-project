@@ -106,3 +106,12 @@ p {
   padding: 10px;
   height: 175px;
 }
+
+#sort-numerically {
+  background-color: maroon;
+  margin: auto;
+  width: 50%;
+  border: 5px solid;
+  padding: 10px;
+  height: 175px;
+}

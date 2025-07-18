@@ -71,9 +71,6 @@ function printToMiles() {
 
 
 // Calculate the sum of numbers within an array
-// Example array
-
-
 function printSumOf() {
   let sumOfOutput = document.getElementById('sum-of-output');
   let textAreaContent = document.getElementById('sum-of-input').value;
@@ -101,6 +98,27 @@ function sumOf(arr) {
 
 
 
+// Sort an array from lowest to highest
+function printNumerically() {
+  let numericalInput = document.getElementById('numerically-input').value
+  let numericalOutput = document.getElementById('numerically-output')
+
+  let numericallyInputArray = numericalInput.split(/[\s,]+/).filter(Boolean).map(Number).filter(num => !isNaN(num))
+
+  let sortedArr = sortArrayNumerically(numericallyInputArray)
+
+  numericalOutput.innerHTML =  `The numerically ordered array is: ${sortedArr}`
+}
+
+function sortArrayNumerically(input) {
+  let sorted = input.sort((a, b) => a - b)
+  return sorted
+}
+
+
+
+
+// // Return a Boolean if a number is divisible by 10
 function printDivisible() {
   let num = document.getElementById('dividend').value
   let div = document.getElementById('divisor').value
@@ -114,8 +132,6 @@ function printDivisible() {
 
   divisorOutput.innerHTML = finalCalc
 }
-
-// Return a Boolean if a number is divisible by 10
 function divisibleByTen(number, divisor) {
   if (number % divisor === 0) {
     return true
@@ -129,9 +145,6 @@ function divisibleByTen(number, divisor) {
 
 
 // Check if a string is a palindrome (spelt the same backwards as it is forwards)
-string1 = "hello"
-
-
 function printPalindrome() {
   let palindromeInputTextArea = document.getElementById('palindrome-input').value
   let palindromeOutput = document.getElementById('palindrome-output')
@@ -192,14 +205,6 @@ function countVowels(sent) {
 // }
 // reverseArray()
 
-// Sort an array from lowest to highest
-// let arr = [9, 17, 27, 99, 55, 32, 18, 66, 45, 832]
-
-// function sortArrayNumerically() {
-//   arr.sort((b, a) => a + b)
-//   console.log(arr)
-// }
-// sortArrayNumerically()
 
 // // Create a function that filters out negative numbers
 // arr = [12, 96, -5, 67, -17, 26, 99]
@@ -223,15 +228,7 @@ function countVowels(sent) {
 // let noSpace = text.replace(/\s/g, '')
 // console.log(noSpace)
 
-// Return the number of vowels in a string
-// let sentance = "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below."
-// let vowels = ['a', 'e', 'i', 'o', 'u']
 
-// function countVowels() {
-//   sentance = sentance.toLowerCase()
-//   console.log(Array.from(sentance).filter(char => vowels.includes(char)))
-// }
-// countVowels()
 
 // 1. Create a function that finds the maximum number in an array
 // arr = [32, 99, 12, 4, 6, 97, 43, 2, 9, 74, 17, 11]
