@@ -195,6 +195,28 @@ function countVowels(sent) {
 }
 
 
+let willjumRust = {
+  name: 'Willjum',
+  profession: 'Youtuber',
+  rust_hours: 9782,
+  base: '3 triangle squares',
+  vehicle: 'Horse'
+}
+console.log('** No changes: ')
+console.log(willjumRust)
+
+willjumRust.name = 'Willy'
+console.log('** Name change: ')
+console.log(willjumRust)
+
+let willyJVehicle = willjumRust.vehicle;
+console.log('** Just vehicle: ')
+console.log(willyJVehicle)
+
+willjumRust['starter'] = willjumRust['base']
+delete willjumRust['base']
+console.log('** Rename base to starter')
+console.log(willjumRust)
 
 // // Create a function that reverses an arrary
 // let arr = [9, 17, 6, 3, 6]
