@@ -219,14 +219,14 @@ delete willjumRust['base']
 console.log('** Rename base to starter')
 console.log(willjumRust)
 
-// // Create a function that reverses an arrary
-// let arr = [9, 17, 6, 3, 6]
+// Create a function that reverses an arrary
+let arr = [9, 17, 6, 3, 6]
 
-// function reverseArray() {
-//   arr.reverse()
-//   console.log(arr)
-// }
-// reverseArray()
+function reverseArray() {
+  arr.reverse()
+  console.log(arr)
+}
+reverseArray()
 
 
 // // Create a function that filters out negative numbers
