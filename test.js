@@ -254,12 +254,12 @@ console.log(noSpace)
 
 
 // 1. Create a function that finds the maximum number in an array
-// arr = [32, 99, 12, 4, 6, 97, 43, 2, 9, 74, 17, 11]
+arr = [32, 99, 12, 4, 6, 97, 43, 2, 9, 74, 17, 11]
 
-// function getLargestNumber(val) {
-//   console.log(Math.max(...val))
-// }
-// getLargestNumber(arr)
+function getLargestNumber(val) {
+  console.log(Math.max(...val))
+}
+getLargestNumber(arr)
 
 
 
