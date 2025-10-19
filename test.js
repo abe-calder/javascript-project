@@ -229,27 +229,27 @@ function reverseArray() {
 reverseArray()
 
 
-// // Create a function that filters out negative numbers
-// arr = [12, 96, -5, 67, -17, 26, 99]
+// Create a function that filters out negative numbers
+arr = [12, 96, -5, 67, -17, 26, 99]
 
-// let positiveNumbers = arr.filter(number => number >= 0)
+let positiveNumbers = arr.filter(number => number >= 0)
 
-// console.log(positiveNumbers)
+console.log(positiveNumbers)
 
-// Remove capitialisation + capitalise the first letter of each word
-// let text = "IT is A LOnG EStABLiSHed facT THAt A rEadEr WIlL bE diStRaCTeD By ThE REAdABlE CONTENt Of a pAge WheN LOokING aT ITS LayOUt. ThE PoiNT OF UsinG lOREM ipsUM iS ThAt iT HAS A MoRE-oR-LESS normAl DisTRIbUTiON of lEttERs, aS OppOsEd tO USIng 'COnTEnT Here, conTENT HEre', MaKinG It lOok LiKE REaDaBLe engLIsH. maNY dESktop pubLIshiNg pAckAgEs and WEb paGe edITORs Now uSE loREM iPsUM aS theIr defAUlT MOdel text, And a SEarCh FoR 'LoREm iPSUm' will uNCoVer ManY WeB siTES STIlL In THEir Infancy. vaRIouS VERSionS hAVE evolVED over tHe yEaRS, sOMEtIMes BY ACCideNT, sOmeTimeS oN PURPoSE ( InjEcTed HumOuR And The liKe )."
-// function deCapitalise() {
-//   let lowered = text.toLowerCase()
-//   console.log(lowered)
-//   textArr = lowered.split(" ").map(words => words[0].toUpperCase() + words.slice(1)).join(' ')
-//   console.log(textArr)
-// }
-// deCapitalise()
+Remove capitialisation + capitalise the first letter of each word
+let text = "IT is A LOnG EStABLiSHed facT THAt A rEadEr WIlL bE diStRaCTeD By ThE REAdABlE CONTENt Of a pAge WheN LOokING aT ITS LayOUt. ThE PoiNT OF UsinG lOREM ipsUM iS ThAt iT HAS A MoRE-oR-LESS normAl DisTRIbUTiON of lEttERs, aS OppOsEd tO USIng 'COnTEnT Here, conTENT HEre', MaKinG It lOok LiKE REaDaBLe engLIsH. maNY dESktop pubLIshiNg pAckAgEs and WEb paGe edITORs Now uSE loREM iPsUM aS theIr defAUlT MOdel text, And a SEarCh FoR 'LoREm iPSUm' will uNCoVer ManY WeB siTES STIlL In THEir Infancy. vaRIouS VERSionS hAVE evolVED over tHe yEaRS, sOMEtIMes BY ACCideNT, sOmeTimeS oN PURPoSE ( InjEcTed HumOuR And The liKe )."
+function deCapitalise() {
+  let lowered = text.toLowerCase()
+  console.log(lowered)
+  textArr = lowered.split(" ").map(words => words[0].toUpperCase() + words.slice(1)).join(' ')
+  console.log(textArr)
+}
+deCapitalise()
 
-// // remove the spaces in a string
-// let text = "IT is A LOnG EStABLiSHed facT THAt A rEadEr WIlL bE diStRaCTeD By ThE REAdABlE CONTENt Of a pAge WheN LOokING aT ITS LayOUt. ThE PoiNT OF UsinG lOREM ipsUM iS ThAt iT HAS A MoRE-oR-LESS normAl DisTRIbUTiON of lEttERs, aS OppOsEd tO USIng 'COnTEnT Here, conTENT HEre', MaKinG It lOok LiKE REaDaBLe engLIsH. maNY dESktop pubLIshiNg pAckAgEs and WEb paGe edITORs Now uSE loREM iPsUM aS theIr defAUlT MOdel text, And a SEarCh FoR 'LoREm iPSUm' will uNCoVer ManY WeB siTES STIlL In THEir Infancy. vaRIouS VERSionS hAVE evolVED over tHe yEaRS, sOMEtIMes BY ACCideNT, sOmeTimeS oN PURPoSE ( InjEcTed HumOuR And The liKe )."
-// let noSpace = text.replace(/\s/g, '')
-// console.log(noSpace)
+// remove the spaces in a string
+let text = "IT is A LOnG EStABLiSHed facT THAt A rEadEr WIlL bE diStRaCTeD By ThE REAdABlE CONTENt Of a pAge WheN LOokING aT ITS LayOUt. ThE PoiNT OF UsinG lOREM ipsUM iS ThAt iT HAS A MoRE-oR-LESS normAl DisTRIbUTiON of lEttERs, aS OppOsEd tO USIng 'COnTEnT Here, conTENT HEre', MaKinG It lOok LiKE REaDaBLe engLIsH. maNY dESktop pubLIshiNg pAckAgEs and WEb paGe edITORs Now uSE loREM iPsUM aS theIr defAUlT MOdel text, And a SEarCh FoR 'LoREm iPSUm' will uNCoVer ManY WeB siTES STIlL In THEir Infancy. vaRIouS VERSionS hAVE evolVED over tHe yEaRS, sOMEtIMes BY ACCideNT, sOmeTimeS oN PURPoSE ( InjEcTed HumOuR And The liKe )."
+let noSpace = text.replace(/\s/g, '')
+console.log(noSpace)
 
 
 
