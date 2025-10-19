@@ -1,1 +1,1 @@
-# This is my project for sprint 6 of foundation
+# This is my project for sprint 6 of foundations
