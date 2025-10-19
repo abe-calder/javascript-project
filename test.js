@@ -204,7 +204,7 @@ let willjumRust = {
   vehicle: 'Horse'
 }
 console.log('** No changes: ')
-
+console.log('willjum')
 
 willjumRust.name = 'Willy'
 console.log('** Name change: ')
