@@ -243,8 +243,3 @@ function countVowels(sent) {
 
 
 
-
-
-
-
-
