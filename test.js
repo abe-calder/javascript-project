@@ -195,6 +195,7 @@ function countVowels(sent) {
 }
 
 
+
 let willjumRust = {
   name: 'Willjum',
   profession: 'Youtuber',
@@ -203,7 +204,7 @@ let willjumRust = {
   vehicle: 'Horse'
 }
 console.log('** No changes: ')
-console.log(willjumRust)
+
 
 willjumRust.name = 'Willy'
 console.log('** Name change: ')
